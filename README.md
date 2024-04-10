@@ -46,9 +46,7 @@ Pour le projet **Analyse Sémantique et Suivi des Sentiments pour la Préservati
 - **Phase 1 : Développement du Prototype**
   - Commencer avec un ensemble limité de sources de données et un modèle sémantique de base pour développer un prototype. Cette phase se concentre sur l'intégration du module de collecte de données avec le moteur d'analyse des sentiments et la présentation des résultats initiaux à travers un tableau de bord simple.
 
-- **Phase 2 : Expansion et Raff
-
-inement du Modèle**
+- **Phase 2 : Expansion et Raffinement du Modèle**
   - Étendre le modèle OWL pour inclure des relations et des entités plus nuancées basées sur les résultats initiaux et les commentaires.
   - Affiner les modèles d'analyse des sentiments pour mieux capturer les sentiments spécifiques exprimés dans les discussions sur le patrimoine culturel.
 
