@@ -1,5 +1,5 @@
 # SAST-CHP
-Analyse sémantique et suivi des sentiments pour la préservation du patrimoine culturel
+Semantic Analysis and Sentiment Tracking for Cultural Heritage Preservation
 
 Pour le projet portant sur **l'Analyse Sémantique et le Suivi des Sentiments pour la Préservation du Patrimoine Culturel**, voici un aperçu plus détaillé qui décompose l'approche, les méthodologies et les technologies qui pourraient être impliquées :
 
@@ -18,8 +18,8 @@ Pour le projet **Analyse Sémantique et Suivi des Sentiments pour la Préservati
 
 **Moteur d'Analyse des Sentiments avec EmoLLM utilisant GPT-4ALL**:
 
-  - **Analyse des Sentiments Avancée avec EmoLLM** : Pour une compréhension plus nuancée des sentiments, exploiter EmoLLM, un modèle conçu pour la détection des émotions et l'analyse des sentiments, alimenté par l'architecture GPT-4. Cette approche peut améliorer significativement la précision et la profondeur de l'analyse des sentiments, permettant la détection d'une large gamme d'émotions au-delà des simples classifications positives, négatives ou neutres.
-  - **Intégration** : Intégrer EmoLLM dans le pipeline d'analyse des sentiments pour traiter les données textuelles collectées à partir de diverses sources, y compris celles obtenues via l'API SERP. Ce modèle peut analyser le texte pour son contenu émotionnel, fournissant des informations sur la façon dont les gens se sentent à propos des sites patrimoniaux et des efforts de préservation. En utilisant la compréhension avancée de GPT-4 des nuances linguistiques, EmoLLM peut identifier des émotions et des sentiments complexes exprimés dans les avis des utilisateurs, les publications sur les réseaux sociaux et les articles de presse.
+  - **Analyse des Sentiments Avancée avec EmoLLM** : Pour une compréhension plus nuancée des sentiments, exploiter [EmoLLM](https://huggingface.co/myclassunil/Emollama-chat-13b-v0.1.gguf), un modèle conçu pour la détection des émotions et l'analyse des sentiments, en s'appuyant sur l'architecture [GPT-4ALL](https://gpt4all.io/index.html). Cette approche peut améliorer significativement la précision et la profondeur de l'analyse des sentiments, permettant la détection d'une large gamme d'émotions au-delà des simples classifications positives, négatives ou neutres.
+  - **Intégration** : Intégrer EmoLLM dans le pipeline d'analyse des sentiments pour traiter les données textuelles collectées à partir de diverses sources, y compris celles obtenues via l'API SERP. Ce modèle peut analyser le texte pour son contenu émotionnel, fournissant des informations sur la façon dont les gens se sentent à propos des sites patrimoniaux et des efforts de préservation. En utilisant la compréhension avancée de GPT-4 des nuances linguistiques, EmoLLM peut identifier des émotions et des sentiments complexes exprimés dans les avis des utilisateurs.
   - **Application** : Appliquer EmoLLM pour analyser et catégoriser les sentiments et les émotions exprimés dans les données collectées, facilitant une compréhension plus approfondie du sentiment du public à l'égard du patrimoine culturel. Cela peut inclure la détection de sentiments de fierté, de nostalgie, d'inquiétude et d'admiration, qui sont cruciaux pour que les organisations de préservation du patrimoine culturel comprennent et abordent.
 
 **Modèle Web Sémantique**:
@@ -38,7 +38,8 @@ Pour le projet **Analyse Sémantique et Suivi des Sentiments pour la Préservati
 - Comparer les performances de votre ontologie avec des ontologies similaires dans le traitement de requêtes ou de tâches équivalentes.
 
 **Tableau de Suivi des Sentiments**:
-   - Concevoir un tableau de bord interactif à l'aide de frameworks tels que Dash ou Streamlit pour visualiser les tendances des sentiments, la distribution géographique des sentiments et les regroupements de sujets.
+
+   - Concevoir un tableau de bord interactif à l'aide de frameworks tels que [Dash] ou Streamlit pour visualiser les tendances des sentiments, la distribution géographique des sentiments et les regroupements de sujets.
    - Mettre en œuvre des fonctionnalités d'analyse temporelle pour suivre comment le sentiment du public à l'égard de sites patrimoniaux spécifiques ou d'artefacts change au fil du temps.
 
 ### Méthodologie
