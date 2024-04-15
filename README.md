@@ -24,6 +24,77 @@ Pour le projet **Analyse Sémantique et Suivi des Sentiments pour la Préservati
 **Modèle Web Sémantique**:
 
   - Utiliser OWL pour définir un modèle sémantique qui capture les relations entre les éléments du patrimoine culturel, les données de sentiment, les lieux géographiques, les périodes historiques et les pages Wikipedia.
+
+     Voici un exemple:
+    
+    ```
+    <!-- Prefix Definitions -->
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:heritage="http://example.org/heritage#">
+
+    <!-- Ontology Header -->
+    <owl:Ontology rdf:about="http://example.org/heritage">
+        <rdfs:comment>An ontology for modeling cultural heritage elements and their emotional assessments.</rdfs:comment>
+    </owl:Ontology>
+
+    <!-- Class Definitions -->
+    
+    <!-- Cultural Heritage Item -->
+    <owl:Class rdf:about="http://example.org/heritage#CulturalHeritageItem">
+        <rdfs:comment>An item of cultural heritage significance.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Sentiment Data -->
+    <owl:Class rdf:about="http://example.org/heritage#SentimentData">
+        <rdfs:comment>Data representing sentiments associated with cultural heritage items.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Geographic Location -->
+    <owl:Class rdf:about="http://example.org/heritage#GeographicLocation">
+        <rdfs:comment>A geographic location relevant to a cultural heritage item.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Historical Period -->
+    <owl:Class rdf:about="http://example.org/heritage#HistoricalPeriod">
+        <rdfs:comment>A historical period during which a cultural heritage item was relevant or created.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Wikipedia Page -->
+    <owl:Class rdf:about="http://example.org/heritage#WikipediaPage">
+        <rdfs:comment>A Wikipedia page providing information about a cultural heritage item.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Object Properties -->
+    
+    <!-- is located in -->
+    <owl:ObjectProperty rdf:about="http://example.org/heritage#isLocatedIn">
+        <rdfs:domain rdf:resource="http://example.org/heritage#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://example.org/heritage#GeographicLocation"/>
+    </owl:ObjectProperty>
+
+    <!-- has sentiment -->
+    <owl:ObjectProperty rdf:about="http://example.org/heritage#hasSentiment">
+        <rdfs:domain rdf:resource="http://example.org/heritage#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://example.org/heritage#SentimentData"/>
+    </owl:ObjectProperty>
+
+    <!-- part of historical period -->
+    <owl:ObjectProperty rdf:about="http://example.org/heritage#partOfHistoricalPeriod">
+        <rdfs:domain rdf:resource="http://example.org/heritage#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://example.org/heritage#HistoricalPeriod"/>
+    </owl:ObjectProperty>
+
+    <!-- described by Wikipedia page -->
+    <owl:ObjectProperty rdf:about="http://example.org/heritage#describedByWikipediaPage">
+        <rdfs:domain rdf:resource="http://example.org/heritage#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://example.org/heritage#WikipediaPage"/>
+    </owl:ObjectProperty>
+    </rdf:RDF>
+    ```
+
   - Utiliser RDF (Resource Description Framework) pour instancier le modèle avec des données du monde réel, facilitant les requêtes complexes et les inférences.
 
 **Vérification de la Cohérence**
