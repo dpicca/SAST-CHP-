@@ -1,5 +1,4 @@
-# SAST-CHP
-Semantic Analysis and Sentiment Tracking for Cultural Heritage Preservation
+# EMPATH: "Emotional Mapping and Preservation through Analytical Technology for Heritage".
 
 Pour le projet portant sur **l'Analyse Sémantique et le Suivi des Sentiments pour la Préservation du Patrimoine Culturel**, voici un aperçu plus détaillé qui décompose l'approche, les méthodologies et les technologies qui pourraient être impliquées :
 
