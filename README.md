@@ -1,6 +1,6 @@
 # EMPATH: "Emotional Mapping and Preservation through Analytical Technology for Heritage".
 
-Pour le projet portant sur **l'Analyse Sémantique et le Suivi des Sentiments pour la Préservation du Patrimoine Culturel**, voici un aperçu plus détaillé qui décompose l'approche, les méthodologies et les technologies qui pourraient être impliquées :
+Pour le project, voici un aperçu plus détaillé qui décompose l'approche, les méthodologies et les technologies qui pourraient être impliquées :
 
 ### Objectif
 
