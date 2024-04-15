@@ -36,10 +36,6 @@ Pour le projet **Analyse Sémantique et Suivi des Sentiments pour la Préservati
 - Évaluer les performances de l'ontologie dans des applications pratiques, en mettant l'accent sur le temps de réponse et les ressources informatiques nécessaires au traitement des requêtes et à l'inférence.
 - Comparer les performances de votre ontologie avec des ontologies similaires dans le traitement de requêtes ou de tâches équivalentes.
 
-**Tableau de Suivi des Sentiments**:
-
-   - Concevoir un tableau de bord interactif à l'aide de frameworks tels que [Dash] ou Streamlit pour visualiser les tendances des sentiments, la distribution géographique des sentiments et les regroupements de sujets.
-   - Mettre en œuvre des fonctionnalités d'analyse temporelle pour suivre comment le sentiment du public à l'égard de sites patrimoniaux spécifiques ou d'artefacts change au fil du temps.
 
 ### Méthodologie
 
