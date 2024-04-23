@@ -21,6 +21,7 @@ Pour le projet **Analyse Sémantique et Suivi des Sentiments pour la Préservati
   - **Intégration** : Intégrer EmoLLM dans le pipeline d'analyse des sentiments pour traiter les données textuelles collectées à partir de diverses sources, y compris celles obtenues via l'API SERP. Ce modèle peut analyser le texte pour son contenu émotionnel, fournissant des informations sur la façon dont les gens se sentent à propos des sites patrimoniaux et des efforts de préservation. En utilisant la compréhension avancée de GPT-4 des nuances linguistiques, EmoLLM peut identifier des émotions et des sentiments complexes exprimés dans les avis des utilisateurs.
   - **Application** : Appliquer EmoLLM pour analyser et catégoriser les sentiments et les émotions exprimés dans les données collectées, facilitant une compréhension plus approfondie du sentiment du public à l'égard du patrimoine culturel. Cela peut inclure la détection de sentiments de fierté, de nostalgie, d'inquiétude et d'admiration, qui sont cruciaux pour que les organisations de préservation du patrimoine culturel comprennent et abordent.
 
+
 **Modèle Web Sémantique**:
 
   - Utiliser OWL pour définir un modèle sémantique qui capture les relations entre les éléments du patrimoine culturel, les données de sentiment, les lieux géographiques, les périodes historiques et les pages Wikipedia.
@@ -107,6 +108,8 @@ Pour le projet **Analyse Sémantique et Suivi des Sentiments pour la Préservati
 - Évaluer les performances de l'ontologie dans des applications pratiques, en mettant l'accent sur le temps de réponse et les ressources informatiques nécessaires au traitement des requêtes et à l'inférence.
 - Comparer les performances de votre ontologie avec des ontologies similaires dans le traitement de requêtes ou de tâches équivalentes.
 
+**RDFlib pour intéragir avec l'ontologie**
+[RDFlib](https://rdflib.readthedocs.io/en/stable/) est une bibliothèque Python populaire utilisée pour travailler avec des données structurées au format RDF (Resource Description Framework). Pour l'utiliser, commencez par installer la bibliothèque via pip avec la commande `pip install rdflib`. Une fois installée, vous pouvez créer un graphe RDF en important `Graph` de RDFlib. Utilisez la méthode `add()` pour ajouter des triplets au graphe, représentant respectivement le sujet, le prédicat et l'objet. Par exemple, `g.add((sujet, prédicat, objet))`. RDFlib permet également de parser des données depuis des fichiers ou des URL avec des formats supportés comme RDF/XML, JSON-LD, Turtle, etc., en utilisant `g.parse(source)`. Cela rend RDFlib extrêmement utile pour les projets qui nécessitent de manipuler ou d'interroger des données sémantiques dans divers formats RDF.
 
 ### Méthodologie
 
