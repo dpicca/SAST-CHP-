@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath/"
+     xml:base="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath">
+        <rdfs:comment>EMPATH Project Ontology as part of the &quot;Programmation pour le Web Sémantique&quot; class given at the University of Lausanne during the spring semester of 2024.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#angerSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#angerSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#anticipationSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#anticipationSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#city -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#city">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Title of the monument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#disgustSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#disgustSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#fearSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#fearSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Adress of the monument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#joySentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#joySentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#loveSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#loveSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#numberOfReviews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#numberOfReviews">
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#optimismSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#optimismSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#pessimismSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#pessimismSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#rating">
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sadnessSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sadnessSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData">
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#surpriseSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#surpriseSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#trustSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#trustSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#type">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Type of monument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#wikipediaPage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#wikipediaPage">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>URL of the Wikipedia page of the monument.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#angerSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#anticipationSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#disgustSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#fearSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#joySentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#loveSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#optimismSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#pessimismSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sadnessSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#surpriseSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#trustSentimentType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#numberOfReviews"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#rating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#type"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#wikipediaPage"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
