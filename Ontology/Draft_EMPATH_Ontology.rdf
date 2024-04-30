@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology/"
+     xml:base="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology">
+        <rdfs:comment>My take on the ontology needed for the EMPATH project as part of the &quot;Programmation pour le Web Sémantique&quot; class given by Davide Picca at the University of Lausanne during the spring semester of 2024.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCity">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCityOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasContinent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasContinent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isContinentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCountry">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCountryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCulturalHeritageTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasMainCulturalHeritageType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasMainCulturalHeritageType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasRegion">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isRegionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasReview">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isReviewOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasSentiment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasSentiment">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isSentimentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Sentiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasSentimentType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasSentimentType">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isSentimentTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Sentiment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SentimentType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriod">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isTimePeriodOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasWikipediaPage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasWikipediaPage">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isWikipediaPageOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCityOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isContinentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isContinentOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCountryOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCountryOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCulturalHeritageTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCulturalHeritageTypeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isMainCulturalHeritageTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isMainCulturalHeritageTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCulturalHeritageTypeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isRegionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isRegionOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isReviewOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isReviewOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isSentimentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isSentimentOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isSentimentTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isSentimentTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isTimePeriodOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isTimePeriodOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isWikipediaPageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isWikipediaPageOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageScore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasCulturalHeritageTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasEI-oc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasEI-oc">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasEI-reg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasEI-reg">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasLatitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasLocationAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasLocationAddress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasLocationLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasLocationLongitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriodEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriodEndDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriodName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriodName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriodStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasTimePeriodStartDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasV-oc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasV-oc">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasV-reg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasV-reg">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasWikipediaPageAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasWikipediaPageAddress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasWikipediaPageTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasWikipediaPageTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#AngerSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#AngerSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#AnticipationSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#AnticipationSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#City">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#hasRegion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#isCityOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Continent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#DisgustSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#DisgustSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#FearSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#FearSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#JoySentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#JoySentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#LoveSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#LoveSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#OptimismSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#OptimismSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PessimismSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PessimismSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SentimentType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SadnessSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SadnessSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PrimarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Sentiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Sentiment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SentimentType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SurpriseSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SurpriseSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TrustSentimentType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TrustSentimentType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SecondarySentimentType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#AngerSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#FearSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#JoySentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SadnessSentimentType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#AnticipationSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#DisgustSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#LoveSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#OptimismSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#PessimismSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SurpriseSentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TrustSentimentType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Continent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Sentiment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#SentimentType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Continent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Sentiment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Continent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#CulturalHeritageItem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Region"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Review"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#Sentiment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#TimePeriod"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jeremias/ontologies/2024/3/EMPATH_Ontology#WikipediaPage"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
