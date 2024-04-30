@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov/"
+     xml:base="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov">
+        <rdfs:comment>Première version de l&apos;ontologie pour le travail de Web sémantique</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasHistoricalPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasHistoricalPeriod">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isHistoricalPeriodOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#historicalPeriod"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>L&apos;élément culturel a pour période historique :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isLocationOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>L&apos;élément culturel à comme location géographique :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasSentiment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasSentiment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isSentimentFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>L&apos;élément culturel a comme sentiment associé :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasWikipediaPage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#hasWikipediaPage">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isWikipediaPageOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#wikipediaPage"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>L&apos;élément culturel a comme page Wikipedia :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isHistoricalPeriodOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isHistoricalPeriodOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#historicalPeriod"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>La période historique a comme élément culturel :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isLocationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>La location géographique a comme élément culturel :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isSentimentFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isSentimentFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Le sentiment a comme élément culturel :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isWikipediaPageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#isWikipediaPageOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#wikipediaPage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>La page Wikipédia est celle de l&apos;élément culturel :</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#anger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#anger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#city -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#city">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#culturalElement">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Elément du patrimoine culturel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Lieu géographique d&apos;origine de l&apos;élément culturel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#historicalPeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#historicalPeriod">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Période historique d&apos;origine de l&apos;élément culturel</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#joy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#joy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#latitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#latitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#longitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#longitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sadness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sadness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#scared -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#scared">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#sentimentData">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Données de sentiment du public</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#wikipediaPage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/travail_ov#wikipediaPage">
+        <dc:creator>wimve</dc:creator>
+        <rdfs:comment>Page Wikipedia de l&apos;élément culturel</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
