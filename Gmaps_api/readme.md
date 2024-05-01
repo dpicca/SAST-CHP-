@@ -10,3 +10,4 @@ conda activate pws24_py3716
 pip install google-search-results
 ```
 
+Dans json_rslt se trouve un pseudo résultat de ce qui pourrait être extrait par l'api (problèmes de requêtes donc pas pu être testé en entier). Mais le principe de un monument qui a un array de reviews semble tenir.

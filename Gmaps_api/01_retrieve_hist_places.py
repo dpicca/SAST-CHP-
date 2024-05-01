@@ -14,15 +14,3 @@ params = {
 
 search = GoogleSearch(params) # Effectuer la recherche
 results = search.get_dict()
-
-
-# Récupération des reviews à l'aide d'un place_id
-reviews_colisee = {
-  "engine": "google_maps_reviews",
-  "hl": "en",
-  "place_id": "ChIJrRMgU7ZhLxMRxAOFkC7I8Sg",
-  "api_key": "cle_api"
-}
-
-search_reviews_colisee = GoogleSearch(reviews_colisee)
-results_reviews_colisee = search_reviews_colisee.get_dict()
