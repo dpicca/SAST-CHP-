@@ -33,6 +33,215 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#city"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#country"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#type"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#wikipediaPage"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isCityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#city"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isCountryOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isCountryOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isSentimentDataOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isSentimentDataOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isTypeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isWikipediaPageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isWikipediaPageOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#wikipediaPage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLatitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLatitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLongitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLongitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasNumberOfReviews -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasNumberOfReviews">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Data property ou Object property ???</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageUrl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#wikipediaPage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:creator>wimve</dc:creator>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -132,14 +341,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#numberOfReviews -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#numberOfReviews">
-        <dc:creator>wimve</dc:creator>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#optimismSentimentType -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#optimismSentimentType">
@@ -153,14 +354,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#pessimismSentimentType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
-        <dc:creator>wimve</dc:creator>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#rating -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#rating">
         <dc:creator>wimve</dc:creator>
     </owl:Class>
     
@@ -244,15 +437,14 @@
         </owl:members>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#culturalElement"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#geographicLocation"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#numberOfReviews"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#rating"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#sentimentData"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#type"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#wikipediaPage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLatitude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLongitude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasNumberOfReviews"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasRating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasTitle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageUrl"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
