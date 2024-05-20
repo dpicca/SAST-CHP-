@@ -22,6 +22,8 @@ Le fichier _places_test.json_ contient un aperçu du résultat de l'extraction G
 
 #### 02 Récupérer les reviews des lieux
 
-*Cette partie est encore en test !*
+Cette partie extrait deux types d'informations: les reviews par monument et les reviewers. Les reviews d'exemples sont contenues dans _reviews_test.json_ et les reviewers dans _reviewers_test.json_.
 
-Dans json_rslt se trouve un pseudo résultat de ce qui pourrait être extrait par l'api (problèmes de requêtes donc pas pu être testé en entier). Mais le principe de un monument qui a un array de reviews semble tenir.
+Chaque monument choisi a une liste d'objets reviews qui se compose de l'id de la personne qui a posté la review, de la datetime à laquelle elle a été postée, du classement attribué (nombre d'étoiles), du nombre de likes de la review ainsi que du texte de la review.
+
+Les reviewers sont un dict qui comprend l'id (répété dans l'objet), le nombre de reviews du user et le nombre de photos postées.
