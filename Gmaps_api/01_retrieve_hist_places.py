@@ -57,6 +57,7 @@ for nom, name in places.items():
     place_info['name'] = rslts_place['title']
     place_info['place_id'] = rslts_place['place_id']
     place_info['description'] = rslts_place['description']
+    place_info['type_ids'] = rslts_place.get('type_ids', [])
     place_info['latitude'] = round(rslts_place['gps_coordinates']['latitude'], 5)
     place_info['longitude'] = round(rslts_place['gps_coordinates']['longitude'], 5)
     place_info['rating'] = rslts_place['rating']
