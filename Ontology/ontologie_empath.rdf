@@ -190,9 +190,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementID -->
+    <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementGmapsID -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementID">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementGmapsID">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -583,7 +583,7 @@
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#HasCulturalElementType"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCountryISO"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementID"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementGmapsID"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementName"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementRating"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationAddress"/>
