@@ -1,1 +1,140 @@
-{"Tour Eiffel": {"review_0": {"v_reg": "0.229", "v_oc": "3: very positive mental state can be inferred", "e_c": ["surprise", "joy", "pessimism", "disgust", "fear", "sadness", "anger"], "ei_reg": [{"joy": "0.147"}, {"fear": "0.049"}, {"sadness": "0.855"}, {"anger": "0.478"}], "ei_oc": [{"joy": "0: no joy can be inferred"}, {"fear": "3: high amount of fear can be inferred"}, {"sadness": "0: no sadness can be inferred"}, {"anger": "2: moderate amount of anger can be inferred"}]}, "review_1": {"v_reg": "0.833", "v_oc": "0: neutral or mixed mental state can be inferred", "e_c": ["love", "sadness", "joy"], "ei_reg": [{"sadness": "0.961"}, {"joy": "0.354"}], "ei_oc": [{"sadness": "3: high amount of sadness can be inferred"}, {"joy": "3: high amount of joy can be inferred"}]}, "review_2": {"v_reg": "0.444", "v_oc": "2: moderately positive mental state can be inferred", "e_c": ["disgust"], "ei_reg": [], "ei_oc": []}}, "Colisee": {"review_0": {"v_reg": "0.975", "v_oc": "-1: slightly negative mental state can be inferred", "e_c": ["pessimism"], "ei_reg": [], "ei_oc": []}, "review_1": {"v_reg": "0.48", "v_oc": "-1: slightly negative mental state can be inferred", "e_c": ["pessimism", "love", "surprise", "anticipation", "trust", "sadness", "optimism"], "ei_reg": [{"sadness": "0.198"}], "ei_oc": [{"sadness": "0: no sadness can be inferred"}]}, "review_2": {"v_reg": "0.066", "v_oc": "1: slightly positive mental state can be inferred", "e_c": ["anger", "pessimism", "sadness", "love", "trust"], "ei_reg": [{"anger": "0.839"}, {"sadness": "0.736"}], "ei_oc": [{"anger": "2: moderate amount of anger can be inferred"}, {"sadness": "1: low amount of sadness can be inferred"}]}}}
+{
+    "Tour Eiffel": {
+        "review_0": {
+            "v_reg": "0.229",
+            "v_oc": "3: very positive mental state can be inferred",
+            "e_c": [
+                "surprise",
+                "joy",
+                "pessimism",
+                "disgust",
+                "fear",
+                "sadness",
+                "anger"
+            ],
+            "ei_reg": [
+                {
+                    "joy": "0.147"
+                },
+                {
+                    "fear": "0.049"
+                },
+                {
+                    "sadness": "0.855"
+                },
+                {
+                    "anger": "0.478"
+                }
+            ],
+            "ei_oc": [
+                {
+                    "joy": "0: no joy can be inferred"
+                },
+                {
+                    "fear": "3: high amount of fear can be inferred"
+                },
+                {
+                    "sadness": "0: no sadness can be inferred"
+                },
+                {
+                    "anger": "2: moderate amount of anger can be inferred"
+                }
+            ]
+        },
+        "review_1": {
+            "v_reg": "0.833",
+            "v_oc": "0: neutral or mixed mental state can be inferred",
+            "e_c": [
+                "love",
+                "sadness",
+                "joy"
+            ],
+            "ei_reg": [
+                {
+                    "sadness": "0.961"
+                },
+                {
+                    "joy": "0.354"
+                }
+            ],
+            "ei_oc": [
+                {
+                    "sadness": "3: high amount of sadness can be inferred"
+                },
+                {
+                    "joy": "3: high amount of joy can be inferred"
+                }
+            ]
+        },
+        "review_2": {
+            "v_reg": "0.444",
+            "v_oc": "2: moderately positive mental state can be inferred",
+            "e_c": [
+                "disgust"
+            ],
+            "ei_reg": [],
+            "ei_oc": []
+        }
+    },
+    "Colisee": {
+        "review_0": {
+            "v_reg": "0.975",
+            "v_oc": "-1: slightly negative mental state can be inferred",
+            "e_c": [
+                "pessimism"
+            ],
+            "ei_reg": [],
+            "ei_oc": []
+        },
+        "review_1": {
+            "v_reg": "0.48",
+            "v_oc": "-1: slightly negative mental state can be inferred",
+            "e_c": [
+                "pessimism",
+                "love",
+                "surprise",
+                "anticipation",
+                "trust",
+                "sadness",
+                "optimism"
+            ],
+            "ei_reg": [
+                {
+                    "sadness": "0.198"
+                }
+            ],
+            "ei_oc": [
+                {
+                    "sadness": "0: no sadness can be inferred"
+                }
+            ]
+        },
+        "review_2": {
+            "v_reg": "0.066",
+            "v_oc": "1: slightly positive mental state can be inferred",
+            "e_c": [
+                "anger",
+                "pessimism",
+                "sadness",
+                "love",
+                "trust"
+            ],
+            "ei_reg": [
+                {
+                    "anger": "0.839"
+                },
+                {
+                    "sadness": "0.736"
+                }
+            ],
+            "ei_oc": [
+                {
+                    "anger": "2: moderate amount of anger can be inferred"
+                },
+                {
+                    "sadness": "1: low amount of sadness can be inferred"
+                }
+            ]
+        }
+    }
+}
