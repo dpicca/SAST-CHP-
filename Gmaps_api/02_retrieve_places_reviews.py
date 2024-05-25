@@ -27,6 +27,13 @@ places = {
     "Taj Mahal": "ChIJbf8C1yFxdDkR3n12P4DkKt0"
 }
 
+# Alternativement, lire le fichier des places obtenus du script 01
+# with open("outputs/places.json", 'r', encoding="utf-8") as file:
+#     places_data = json.load(file)
+
+# # Extraire le nom et l'id
+# places = {key: value['place_id'] for key, value in places_data.items()}
+
 # Paramètres, clé API à insérer
 gmaps_review_params = {
     "engine": "google_maps_reviews",
