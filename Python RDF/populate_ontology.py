@@ -60,10 +60,10 @@ for key,items in place_data.items():
     
     #Check if the CulturalElement has a sentiment analysis
     if key in sentiment_data:
-        for sentiment, items in sentiment_data[key].items():
+        for rev, items in sentiment_data[key].items():
 
             # Define Review URI, Class
-            review = URIRef(namespace+element_name+'_'+sentiment)
+            review = URIRef(namespace+element_name+'_'+rev)
             g.add((review, RDF.type, NS.Review))
             
             # Triples from DataProperties with Review as Domain
@@ -93,7 +93,7 @@ for key,items in place_data.items():
             for sentiment_type in items['e_c']:
 
                 # Define Sentiment URI, Class (done with sentiment_dict)
-                sentiment = URIRef(namespace+element_name+'_'+'sentiment_type_'+sentiment_type)
+                sentiment = URIRef(namespace+element_name+'_'+rev+'_'+sentiment_type)
                 g.add((sentiment, RDF.type, sentiment_dict[sentiment_type]))
 
                 # Triples from ObjectProperties between Sentiment and Review 

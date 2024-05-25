@@ -72,7 +72,6 @@
     <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentiment -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentiment">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
@@ -130,7 +129,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isSentimentOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
@@ -279,7 +277,6 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexOrdinalClassification">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <dc:creator>wimve</dc:creator>
         <rdfs:comment>Such and such a comment has such and such an intensity index according to the ordinal classification.</rdfs:comment>
     </owl:DatatypeProperty>
@@ -313,12 +310,10 @@
     <!-- http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexOrdinalClassification -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexOrdinalClassification">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <dc:creator>wimve</dc:creator>
         <rdfs:comment>Such and such a sentiment about a review has such and such an intensity index according to the ordinal classification.</rdfs:comment>
     </owl:DatatypeProperty>
@@ -329,7 +324,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexRegression">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
@@ -539,22 +533,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AnticipationSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#DisgustSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#OptimismSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#TrustSentimentType"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

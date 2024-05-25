@@ -6,17 +6,172 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#OptimismSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: optimism.</rdfs:comment>
+  <rdf:Description rdf:nodeID="Nbe6922a86014457593c950269aec3de9">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <rdf:rest rdf:nodeID="Nff19137d232c41ba9381fef4b5efbbc1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType">
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJbf8C1yFxdDkR3n12P4DkKt0">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:label>Taj_Mahal</rdfs:label>
+    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJbf8C1yFxdDkR3n12P4DkKt0</base:CulturalElementGmapsID>
+    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taj Mahal</base:hasCulturalElementName>
+    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</base:hasCulturalElementRating>
+    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">228176</base:hasNumberOfReviews>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monument</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historic_site</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
+    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJbf8C1yFxdDkR3n12P4DkKt0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementGmapsID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>A given cultural heritage element has a given ID on the API SERP.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_sadness">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: no sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.855</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexRegression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a sentiment about a review has such and such an intensity index according to a regression.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1: slightly negative mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
+    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.48</base:hasReviewIntensityIndexRegression>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_pessimism"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_love"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_surprise"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_anticipation"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_trust"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_sadness"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_optimism"/>
+    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: very positive mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
+    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.229</base:hasReviewIntensityIndexRegression>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_surprise"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_joy"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_pessimism"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_disgust"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_fear"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_sadness"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_anger"/>
+    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentiment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a comment has such and such a sentiment associated with it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_0">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1: slightly negative mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
+    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.975</base:hasReviewIntensityIndexRegression>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_0_pessimism"/>
+    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Trevi_Fountain_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.90093</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.48331</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piazza di Trevi, 00187 Roma RM, Italy</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:label>Trevi_Fountain</rdfs:label>
+    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJ1UCDJ1NgLxMRtrsCzOHxdvY</base:CulturalElementGmapsID>
+    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trevi Fountain</base:hasCulturalElementName>
+    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</base:hasCulturalElementRating>
+    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">416093</base:hasNumberOfReviews>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fountain</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historical_landmark</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
+    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrVwNOsfR5zsRPHOcIKclCsc">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:label>Gateway_Of_India_Mumbai</rdfs:label>
+    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJrVwNOsfR5zsRPHOcIKclCsc</base:CulturalElementGmapsID>
+    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gateway Of India Mumbai</base:hasCulturalElementName>
+    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</base:hasCulturalElementRating>
+    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">367950</base:hasNumberOfReviews>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monument</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historical_landmark</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
+    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJrVwNOsfR5zsRPHOcIKclCsc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Plaza_de_la_Constitución_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.4326018</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-99.1332049</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P.za de la Constitución S/N, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06010 Ciudad de México, CDMX, Mexico</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MX</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1ed42b5f0784c4b96d472d79a2c48a7">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexRegression"/>
+    <rdf:rest rdf:nodeID="N63d49c35c1b64b1d989819eaf50faeae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLongitude">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a geographical location has such and such a longitude.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJrVwNOsfR5zsRPHOcIKclCsc">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Gateway_Of_India_Mumbai_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.92198</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.83465</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apollo Bandar, Colaba, Mumbai, Maharashtra 400001, India</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IN</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrVwNOsfR5zsRPHOcIKclCsc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
     <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: pessimism.</rdfs:comment>
+    <rdfs:comment>Sentiment type: fear.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1: slightly positive mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
+    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.066</base:hasReviewIntensityIndexRegression>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_anger"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_pessimism"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_sadness"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_love"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_trust"/>
+    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nff19137d232c41ba9381fef4b5efbbc1">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <rdf:rest rdf:nodeID="N1e8cf749d48540e0972410d55a14b38a"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJ86z1Nxi9oRQR9g3r9ULAl1w">
     <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
@@ -29,29 +184,155 @@
     <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
     <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJ86z1Nxi9oRQR9g3r9ULAl1w"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: neutral or mixed mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
-    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.833</base:hasReviewIntensityIndexRegression>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_love"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_sadness"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_joy"/>
-    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_pessimism">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nda8d851ca6ca4c5ab789ef08b63e2ce8">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdf:rest rdf:nodeID="N04cef2fd1180429d8521b806959a6104"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: anger.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1: slightly positive mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
-    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.066</base:hasReviewIntensityIndexRegression>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_anger"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_pessimism"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_sadness"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_love"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_trust"/>
-    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a review has such and such a rating.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7d98bc155a9847659d824fc99772d3ab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+    <owl:members rdf:nodeID="N9553c0a12f6a4d49a1ebdb800d00635e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1_joy">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: high amount of joy can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.354</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf5ca24d679444d00834f7b3647197240">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexRegression"/>
+    <rdf:rest rdf:nodeID="N316b4d1cf2c2427b94763bce48125552"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AnticipationSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: anticipation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1_love">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Cultural heritage element.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:label>Plaza_de_la_Constitución</rdfs:label>
+    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w</base:CulturalElementGmapsID>
+    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plaza de la Constitución</base:hasCulturalElementName>
+    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</base:hasCulturalElementRating>
+    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">307235</base:hasNumberOfReviews>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaza</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historic_site</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
+    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJk7Q_TbcEwhURhUcJjk_50VU">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Masjid_al_Haram_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.42287</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.82573</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al Haram, Makkah 24231, Saudi Arabia</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SA</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJk7Q_TbcEwhURhUcJjk_50VU"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasNumberOfReviews">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such an element of cultural heritage has so many reviews.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_joy">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: no joy can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.147</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_sadness">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: no sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.198</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_anger">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2: moderate amount of anger can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.478</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: surprise.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageTitle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>A given Wikipedia page has a given page title.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageUrl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>A given Wikipedia page has a given URL.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_anger">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2: moderate amount of anger can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.839</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Review about the cultural heritage element.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1_sadness">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: high amount of sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.961</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc26d8d343e40447b99f2d0046356d520">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLatitude"/>
+    <rdf:rest rdf:nodeID="N101397e69ac14efe9f1d03a62060bdb7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>A given cultural heritage element has a given wikipedia page.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isWikipediaPageOf">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -64,200 +345,39 @@
     <dc:creator>wimve</dc:creator>
     <rdfs:comment>Such and such a wikipedia page belongs to such and such an element of cultural heritage.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N1e97d63da92d4570ad2a284843027ae5">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType"/>
-    <rdf:rest rdf:nodeID="N63801f2f872a4b64af7ed5c87bcfcd2a"/>
+  <rdf:Description rdf:nodeID="N194e0224a0624751b8968d527ac4ed54">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf"/>
+    <rdf:rest rdf:nodeID="Nedc8de7021604438ab9f632029467424"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJD3uTd9hx5kcR1IQvGfr8dbk">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:label>Louvre_Museum</rdfs:label>
-    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJD3uTd9hx5kcR1IQvGfr8dbk</base:CulturalElementGmapsID>
-    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Louvre Museum</base:hasCulturalElementName>
-    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</base:hasCulturalElementRating>
-    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">394895</base:hasNumberOfReviews>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">art_museum</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">museum</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
-    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJD3uTd9hx5kcR1IQvGfr8dbk"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_sadness">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1: low amount of sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.736</base:hasSentimentIntensityIndexRegression>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasNumberOfReviews">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such an element of cultural heritage has so many reviews.</rdfs:comment>
+  <rdf:Description rdf:nodeID="N9fc4d6a6608d43f98700612a9b5694bc">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageUrl"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N9150c961ba984788a3713d0b26ef81ff">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
-    <rdf:rest rdf:nodeID="Nde43b329b3b14191a25a8de5bb95e99f"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_disgust">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#DisgustSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#HasCulturalElementType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such an element of cultural heritage is of such and such a type.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <rdfs:comment>EMPATH Project Ontology as part of the "Programmation pour le Web Sémantique" class given at the University of Lausanne during the spring semester of 2024.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#TrustSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: trust.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageUrl">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>A given Wikipedia page has a given URL.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation">
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isReviewOf">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>A given cultural heritage element has a given location.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: sadness.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentiment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
     <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a comment has such and such a sentiment associated with it.</rdfs:comment>
+    <rdfs:comment>Such and such a review belongs to such and such an element of cultural heritage.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJbf8C1yFxdDkR3n12P4DkKt0">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Taj_Mahal_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">27.17514</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">78.04214</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001, India</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IN</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJbf8C1yFxdDkR3n12P4DkKt0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_anticipation">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AnticipationSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJk7Q_TbcEwhURhUcJjk_50VU">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:label>Masjid_al_Haram</rdfs:label>
-    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJk7Q_TbcEwhURhUcJjk_50VU</base:CulturalElementGmapsID>
-    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masjid al-Haram</base:hasCulturalElementName>
-    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</base:hasCulturalElementRating>
-    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">437992</base:hasNumberOfReviews>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mosque</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
-    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJk7Q_TbcEwhURhUcJjk_50VU"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N3df733291840484a838afd01f5ffdab3">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexOrdinalClassification"/>
-    <rdf:rest rdf:nodeID="N9f9fa0d6993447f19406aed933bf9950"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8b5b47dadadf4cbc8eff9790702029f2">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexRegression"/>
-    <rdf:rest rdf:nodeID="Nb42b6a7ede3b40468252cd1eb08c0d92"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1: slightly negative mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
-    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.48</base:hasReviewIntensityIndexRegression>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_pessimism"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_love"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_surprise"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_anticipation"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_trust"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_sadness"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_optimism"/>
-    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N4901463957a247b6962b43f40e0c7aaa">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementName"/>
-    <rdf:rest rdf:nodeID="Ncfdb0eb3a95d45228812d3f553398ce1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_0">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1: slightly negative mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
-    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.975</base:hasReviewIntensityIndexRegression>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_pessimism"/>
-    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJrVwNOsfR5zsRPHOcIKclCsc">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Gateway_Of_India_Mumbai_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.92198</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.83465</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apollo Bandar, Colaba, Mumbai, Maharashtra 400001, India</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IN</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrVwNOsfR5zsRPHOcIKclCsc"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc907dae9aa8d470dbd757844009ae9e0">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-    <owl:members rdf:nodeID="N8b45c1d736874f978dbd5b7edbf92db3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: very positive mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
-    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.229</base:hasReviewIntensityIndexRegression>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_surprise"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_joy"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_pessimism"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_disgust"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_fear"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_sadness"/>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_anger"/>
-    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Plaza_de_la_Constitución_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.4326018</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-99.1332049</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P.za de la Constitución S/N, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06010 Ciudad de México, CDMX, Mexico</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MX</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType">
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
     <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: joy.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReview">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a cultural heritage element has such and such a review associated with it.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Trevi_Fountain_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">41.90093</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.48331</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piazza di Trevi, 00187 Roma RM, Italy</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY"/>
+    <rdfs:comment>Sentiment type: love.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0">
     <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
@@ -273,92 +393,153 @@
     <base:hasReview rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1"/>
     <base:hasReview rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_2"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N8e2d8555a6e94b8a8bf930238ca85f54">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLatitude"/>
-    <rdf:rest rdf:nodeID="N3509661573024c23b8adb2965acf2d25"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCountryISO">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Cultural heritage element.</rdfs:comment>
+    <rdfs:comment>Such and such a geographical location has such and such a country ISO.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a location is the location of such and such an element of cultural heritage.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: neutral or mixed mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
+    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.833</base:hasReviewIntensityIndexRegression>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1_love"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1_sadness"/>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1_joy"/>
+    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2: moderately positive mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
+    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.444</base:hasReviewIntensityIndexRegression>
+    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_2_disgust"/>
+    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReview">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a cultural heritage element has such and such a review associated with it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJ86z1Nxi9oRQR9g3r9ULAl1w">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Acropolis_of_Athens_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">37.97153</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.72575</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Athens 105 58, Greece</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJ86z1Nxi9oRQR9g3r9ULAl1w"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc843eea9e9f940f0bc3f913fdbeba902">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isSentimentOf"/>
+    <rdf:rest rdf:nodeID="N16869df4efcd4927a1f8f0ed9741050d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#TrustSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: trust.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: joy.</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <dc:creator>wimve</dc:creator>
     <rdfs:comment>Wikipedia page associated with the cultural heritage element.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd6ca5a41bfab49e7a585e56ce14cf7f0">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isReviewOf"/>
-    <rdf:rest rdf:nodeID="N5395df959bf1498298a4208b56c89c2f"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#HasCulturalElementType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such an element of cultural heritage is of such and such a type.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N13093ae9b62246a497337750a3924876">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType"/>
-    <rdf:rest rdf:nodeID="N48dadefc0f9946de8f66881d295154ff"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJLU7jZClu5kcR4PcOOO6p3I0">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Eiffel_Tower_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.85837</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.2944812999999997</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Av. Gustave Eiffel, 75007 Paris, France</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FR</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJbf8C1yFxdDkR3n12P4DkKt0">
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJD3uTd9hx5kcR1IQvGfr8dbk">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Louvre_Museum_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.86061</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.33764</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Av. Gustave Eiffel, 75007 Paris, France</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FR</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJD3uTd9hx5kcR1IQvGfr8dbk"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJk7Q_TbcEwhURhUcJjk_50VU">
     <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:label>Taj_Mahal</rdfs:label>
-    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJbf8C1yFxdDkR3n12P4DkKt0</base:CulturalElementGmapsID>
-    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taj Mahal</base:hasCulturalElementName>
-    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</base:hasCulturalElementRating>
-    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">228176</base:hasNumberOfReviews>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monument</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historic_site</base:hasCulturalElementType>
+    <rdfs:label>Masjid_al_Haram</rdfs:label>
+    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJk7Q_TbcEwhURhUcJjk_50VU</base:CulturalElementGmapsID>
+    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masjid al-Haram</base:hasCulturalElementName>
+    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</base:hasCulturalElementRating>
+    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">437992</base:hasNumberOfReviews>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mosque</base:hasCulturalElementType>
     <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
-    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJbf8C1yFxdDkR3n12P4DkKt0"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf08a0623a24945c0b72c0e71f5bc7f68">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexOrdinalClassification"/>
-    <rdf:rest rdf:nodeID="N8b5b47dadadf4cbc8eff9790702029f2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Geographical location of the cultural heritage element.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N88dc3de99f684c56aa2cc5ce542d0260">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationAddress"/>
-    <rdf:rest rdf:nodeID="N8e2d8555a6e94b8a8bf930238ca85f54"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: fear.</rdfs:comment>
+    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJk7Q_TbcEwhURhUcJjk_50VU"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexOrdinalClassification">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <dc:creator>wimve</dc:creator>
     <rdfs:comment>Such and such a sentiment about a review has such and such an intensity index according to the ordinal classification.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N8b45c1d736874f978dbd5b7edbf92db3">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#HasCulturalElementType"/>
-    <rdf:rest rdf:nodeID="N82081f7d7a6d47c7bd9df07e0ffe0aa9"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_joy">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1"/>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: no joy can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: high amount of joy can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.147</base:hasSentimentIntensityIndexRegression>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.354</base:hasSentimentIntensityIndexRegression>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isReviewOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationAddress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a review belongs to such and such an element of cultural heritage.</rdfs:comment>
+    <rdfs:comment>The geographical location of the cultural heritage item has such an address.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexRegression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a review has such and such an intensity index according to a regression.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJD3uTd9hx5kcR1IQvGfr8dbk">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:label>Louvre_Museum</rdfs:label>
+    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJD3uTd9hx5kcR1IQvGfr8dbk</base:CulturalElementGmapsID>
+    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Louvre Museum</base:hasCulturalElementName>
+    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</base:hasCulturalElementRating>
+    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">394895</base:hasNumberOfReviews>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">art_museum</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">museum</base:hasCulturalElementType>
+    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
+    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJD3uTd9hx5kcR1IQvGfr8dbk"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg">
     <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
@@ -374,216 +555,43 @@
     <base:hasReview rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
     <base:hasReview rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N2a3e1e0cc6bc47aeab8602e5834e8457">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="N316b4d1cf2c2427b94763bce48125552">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewRating"/>
+    <rdf:rest rdf:nodeID="N3c667852e2784348b7ab5c39ff52cd63"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexRegression">
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: sadness.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_love">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Geographical location of the cultural heritage element.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N101397e69ac14efe9f1d03a62060bdb7">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLongitude"/>
+    <rdf:rest rdf:nodeID="Ne8cb645ee25d421f938edbb117141919"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c667852e2784348b7ab5c39ff52cd63">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexOrdinalClassification"/>
+    <rdf:rest rdf:nodeID="Nb1ed42b5f0784c4b96d472d79a2c48a7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexOrdinalClassification">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a review has such and such an intensity index according to a regression.</rdfs:comment>
+    <rdfs:comment>Such and such a comment has such and such an intensity index according to the ordinal classification.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a location is the location of such and such an element of cultural heritage.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N77cdb03abc4241699adaabafd04614ba">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <rdf:rest rdf:nodeID="N2a3e1e0cc6bc47aeab8602e5834e8457"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:label>Plaza_de_la_Constitución</rdfs:label>
-    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w</base:CulturalElementGmapsID>
-    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plaza de la Constitución</base:hasCulturalElementName>
-    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.7</base:hasCulturalElementRating>
-    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">307235</base:hasNumberOfReviews>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaza</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historic_site</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
-    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_0YURDDaRslChIJ_6pkSM3-0YURDDaRslwM_0wwM_0w"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_sadness">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: no sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1: low amount of sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.198</base:hasSentimentIntensityIndexRegression>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.736</base:hasSentimentIntensityIndexRegression>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementGmapsID">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>A given cultural heritage element has a given ID on the API SERP.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncf529bdfd5a44b0f962202b519d443ea">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentiment"/>
-    <rdf:rest rdf:nodeID="N4003ca66a22d4406906245200f262469"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageTitle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>A given Wikipedia page has a given page title.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJk7Q_TbcEwhURhUcJjk_50VU">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Masjid_al_Haram_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">21.42287</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.82573</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Al Haram, Makkah 24231, Saudi Arabia</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SA</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJk7Q_TbcEwhURhUcJjk_50VU"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5395df959bf1498298a4208b56c89c2f">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isSentimentOf"/>
-    <rdf:rest rdf:nodeID="Nb2a5dffe26f6489b84717fc44e8fb639"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N3509661573024c23b8adb2965acf2d25">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLongitude"/>
-    <rdf:rest rdf:nodeID="N1b18a73dee4f4e119a049d96769892ad"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLongitude">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a geographical location has such and such a longitude.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJLU7jZClu5kcR4PcOOO6p3I0">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Eiffel_Tower_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.85837</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.2944812999999997</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Av. Gustave Eiffel, 75007 Paris, France</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FR</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_anger">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2: moderate amount of anger can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.478</base:hasSentimentIntensityIndexRegression>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrVwNOsfR5zsRPHOcIKclCsc">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:label>Gateway_Of_India_Mumbai</rdfs:label>
-    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJrVwNOsfR5zsRPHOcIKclCsc</base:CulturalElementGmapsID>
-    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gateway Of India Mumbai</base:hasCulturalElementName>
-    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</base:hasCulturalElementRating>
-    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">367950</base:hasNumberOfReviews>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monument</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historical_landmark</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
-    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJrVwNOsfR5zsRPHOcIKclCsc"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N82081f7d7a6d47c7bd9df07e0ffe0aa9">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCountryISO"/>
-    <rdf:rest rdf:nodeID="Naa16624f0d654c4eaa0cd17cbc040603"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_surprise">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: anger.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_pessimism">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_0"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCountryISO">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a geographical location has such and such a country ISO.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#DisgustSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: disgust.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_fear">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: high amount of fear can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.049</base:hasSentimentIntensityIndexRegression>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexRegression">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a sentiment about a review has such and such an intensity index according to a regression.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isSentimentOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a sentiment is associated with such and such a comment.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPage">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>A given cultural heritage element has a given wikipedia page.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_sadness">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1"/>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0: no sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: high amount of sadness can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.855</base:hasSentimentIntensityIndexRegression>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.961</base:hasSentimentIntensityIndexRegression>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_disgust">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#DisgustSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_optimism">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#OptimismSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
+  <rdf:Description rdf:nodeID="N1e8cf749d48540e0972410d55a14b38a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#WikipediaPage"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg">
     <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
@@ -594,188 +602,9 @@
     <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT</base:hasCountryISO>
     <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJrRMgU7ZhLxMRxAOFkC7I8Sg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJD3uTd9hx5kcR1IQvGfr8dbk">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Louvre_Museum_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.86061</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.33764</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Av. Gustave Eiffel, 75007 Paris, France</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FR</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJD3uTd9hx5kcR1IQvGfr8dbk"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncfdb0eb3a95d45228812d3f553398ce1">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementRating"/>
-    <rdf:rest rdf:nodeID="N88dc3de99f684c56aa2cc5ce542d0260"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementRating">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such an element of cultural heritage has such and such an average score according to the API SERP.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nc0615d970dde407a8bc54f414150fd66">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
-    <rdf:rest rdf:nodeID="Nd8dbfd64c9e544359bc5e24c5ea8f28d"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N158ae5b668174f6a8adabc1babe7d408">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isLocationOf"/>
-    <rdf:rest rdf:nodeID="Nd6ca5a41bfab49e7a585e56ce14cf7f0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewRating">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a review has such and such a rating.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: love.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdfs:label>Trevi_Fountain</rdfs:label>
-    <base:CulturalElementGmapsID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChIJ1UCDJ1NgLxMRtrsCzOHxdvY</base:CulturalElementGmapsID>
-    <base:hasCulturalElementName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trevi Fountain</base:hasCulturalElementName>
-    <base:hasCulturalElementRating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</base:hasCulturalElementRating>
-    <base:hasNumberOfReviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">416093</base:hasNumberOfReviews>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fountain</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">historical_landmark</base:hasCulturalElementType>
-    <base:hasCulturalElementType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tourist_attraction</base:hasCulturalElementType>
-    <base:hasLocation rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJ1UCDJ1NgLxMRtrsCzOHxdvY"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N072f82586ec94da6b16843cf3cdcb468">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
-    <rdf:rest rdf:nodeID="N14028afb888a4487ba889fc6994ba165"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb2a5dffe26f6489b84717fc44e8fb639">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isWikipediaPageOf"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne4803bf08d514058a407dddb25da3e95">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation"/>
-    <rdf:rest rdf:nodeID="N8edabc1e9c814ae6a3412fb54ad89c9f"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5ad5af28050646a1b73e6fafd57702d2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="N356c6ce0e34a474f826155cc75d09a80"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJ86z1Nxi9oRQR9g3r9ULAl1w">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:label>Acropolis_of_Athens_Location</rdfs:label>
-    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">37.97153</base:hasLocationLatitude>
-    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.72575</base:hasLocationLongitude>
-    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Athens 105 58, Greece</base:hasLocationAddress>
-    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR</base:hasCountryISO>
-    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJ86z1Nxi9oRQR9g3r9ULAl1w"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AnticipationSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: anticipation.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nde43b329b3b14191a25a8de5bb95e99f">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SadnessSentimentType"/>
-    <rdf:rest rdf:nodeID="N1e97d63da92d4570ad2a284843027ae5"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf4e3bddf93e845c1b12152c11728cb37">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#DisgustSentimentType"/>
-    <rdf:rest rdf:nodeID="Nc0615d970dde407a8bc54f414150fd66"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nd8dbfd64c9e544359bc5e24c5ea8f28d">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#JoySentimentType"/>
-    <rdf:rest rdf:nodeID="N13093ae9b62246a497337750a3924876"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_surprise">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_trust">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#TrustSentimentType"/>
     <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_anger">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AngerSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
-    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2: moderate amount of anger can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
-    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.839</base:hasSentimentIntensityIndexRegression>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Sentiment type: surprise.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8edabc1e9c814ae6a3412fb54ad89c9f">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReview"/>
-    <rdf:rest rdf:nodeID="Ncf529bdfd5a44b0f962202b519d443ea"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N356c6ce0e34a474f826155cc75d09a80">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
-    <rdf:rest rdf:nodeID="Nda8d851ca6ca4c5ab789ef08b63e2ce8"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N48dadefc0f9946de8f66881d295154ff">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#OptimismSentimentType"/>
-    <rdf:rest rdf:nodeID="N9150c961ba984788a3713d0b26ef81ff"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N63801f2f872a4b64af7ed5c87bcfcd2a">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#TrustSentimentType"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexOrdinalClassification">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a comment has such and such an intensity index according to the ordinal classification.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLatitude">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Such and such a geographical location has such and such a latitude.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Naa16624f0d654c4eaa0cd17cbc040603">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementGmapsID"/>
-    <rdf:rest rdf:nodeID="N4901463957a247b6962b43f40e0c7aaa"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb42b6a7ede3b40468252cd1eb08c0d92">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewRating"/>
-    <rdf:rest rdf:nodeID="N3df733291840484a838afd01f5ffdab3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_love">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N04cef2fd1180429d8521b806959a6104">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <rdf:rest rdf:nodeID="N77cdb03abc4241699adaabafd04614ba"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>Review about the cultural heritage element.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_love">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_1"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N1b18a73dee4f4e119a049d96769892ad">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasNumberOfReviews"/>
-    <rdf:rest rdf:nodeID="Nf08a0623a24945c0b72c0e71f5bc7f68"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_2">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
-    <base:hasReviewIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2: moderately positive mental state can be inferred</base:hasReviewIntensityIndexOrdinalClassification>
-    <base:hasReviewIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.444</base:hasReviewIntensityIndexRegression>
-    <base:hasSentiment rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_disgust"/>
-    <base:isReviewOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJLU7jZClu5kcR4PcOOO6p3I0"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementName">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -785,57 +614,198 @@
     <dc:creator>wimve</dc:creator>
     <rdfs:comment>Such and such a cultural heritage element has such and such a name.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_sentiment_type_trust">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#TrustSentimentType"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LocationOf_ChIJbf8C1yFxdDkR3n12P4DkKt0">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:label>Taj_Mahal_Location</rdfs:label>
+    <base:hasLocationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">27.17514</base:hasLocationLatitude>
+    <base:hasLocationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">78.04214</base:hasLocationLongitude>
+    <base:hasLocationAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001, India</base:hasLocationAddress>
+    <base:hasCountryISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IN</base:hasCountryISO>
+    <base:isLocationOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement_ChIJbf8C1yFxdDkR3n12P4DkKt0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncaee8c287375423c9b9549efbec921ca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="N0132f8c85bce44389b17eba96ddfc64a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>A given cultural heritage element has a given location.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N997b54b7f3ce41b88d7abb8a84d09ebd">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementName"/>
+    <rdf:rest rdf:nodeID="N7569d504287a4cf5a5285acfcf86900b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationLatitude">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a geographical location has such and such a latitude.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isSentimentOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Review"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such a sentiment is associated with such and such a comment.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#OptimismSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: optimism.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#DisgustSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: disgust.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb988f4de7c44c728c049f9e32597827">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementGmapsID"/>
+    <rdf:rest rdf:nodeID="N997b54b7f3ce41b88d7abb8a84d09ebd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementRating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Such and such an element of cultural heritage has such and such an average score according to the API SERP.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N91fdbc4093424a26936594907e3580b9">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReview"/>
+    <rdf:rest rdf:nodeID="N24c8d462c7594f818622d3c830a0f498"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_surprise">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType"/>
     <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0132f8c85bce44389b17eba96ddfc64a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#CulturalElement"/>
+    <rdf:rest rdf:nodeID="Ndfc9d07cf1e944dc971a3e6ed9008310"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N43ba1459e1ca4386830039861a3b6b1d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationAddress"/>
+    <rdf:rest rdf:nodeID="Nc26d8d343e40447b99f2d0046356d520"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_2_disgust">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#DisgustSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_surprise">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#SurpriseSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment"/>
+    <dc:creator>wimve</dc:creator>
+    <rdfs:comment>Sentiment type: pessimism.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0759c97176a243ff9f86c78164188883">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocation"/>
+    <rdf:rest rdf:nodeID="N91fdbc4093424a26936594907e3580b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_pessimism">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
     <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9ccae0b663e44488a7d32bfd4e9ddd63">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCountryISO"/>
+    <rdf:rest rdf:nodeID="Ncb988f4de7c44c728c049f9e32597827"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24c8d462c7594f818622d3c830a0f498">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentiment"/>
+    <rdf:rest rdf:nodeID="N4644bb713e0549999eca64f650575188"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_fear">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#FearSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
+    <base:hasSentimentIntensityIndexOrdinalClassification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3: high amount of fear can be inferred</base:hasSentimentIntensityIndexOrdinalClassification>
+    <base:hasSentimentIntensityIndexRegression rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.049</base:hasSentimentIntensityIndexRegression>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_optimism">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#OptimismSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N834943d5d8b746a286cda4fcdeed419a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasReviewIntensityIndexOrdinalClassification"/>
+    <rdf:rest rdf:nodeID="Nf5ca24d679444d00834f7b3647197240"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7569d504287a4cf5a5285acfcf86900b">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasCulturalElementRating"/>
+    <rdf:rest rdf:nodeID="N43ba1459e1ca4386830039861a3b6b1d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4644bb713e0549999eca64f650575188">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPage"/>
+    <rdf:rest rdf:nodeID="N194e0224a0624751b8968d527ac4ed54"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne8cb645ee25d421f938edbb117141919">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasNumberOfReviews"/>
+    <rdf:rest rdf:nodeID="N834943d5d8b746a286cda4fcdeed419a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0_pessimism">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9553c0a12f6a4d49a1ebdb800d00635e">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#HasCulturalElementType"/>
+    <rdf:rest rdf:nodeID="N9ccae0b663e44488a7d32bfd4e9ddd63"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd879d4c9f85a4d2ea8ed417f9e4bedc6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+    <owl:members rdf:nodeID="N0759c97176a243ff9f86c78164188883"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_0_pessimism">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_trust">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#TrustSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N16869df4efcd4927a1f8f0ed9741050d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isWikipediaPageOf"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Sentiment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <dc:creator>wimve</dc:creator>
     <rdfs:comment>Different kinds of sentiments recovered with EmoLLM.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasLocationAddress">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <dc:creator>wimve</dc:creator>
-    <rdfs:comment>The geographical location of the cultural heritage item has such an address.</rdfs:comment>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>EMPATH Project Ontology as part of the "Programmation pour le Web Sémantique" class given at the University of Lausanne during the spring semester of 2024.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N8f8634e2545b4befaf6eccc689d636d0">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="N072f82586ec94da6b16843cf3cdcb468"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2_love">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#LoveSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_2"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf23a54bf9d734c329be92f83e1a3df43">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageUrl"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="Nedc8de7021604438ab9f632029467424">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#isReviewOf"/>
+    <rdf:rest rdf:nodeID="Nc843eea9e9f940f0bc3f913fdbeba902"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_sentiment_type_pessimism">
-    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#PessimismSentimentType"/>
-    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Eiffel_Tower_review_0"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1_anticipation">
+    <rdf:type rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AnticipationSentimentType"/>
+    <base:isSentimentOf rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#Colosseum_review_1"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N4003ca66a22d4406906245200f262469">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPage"/>
-    <rdf:rest rdf:nodeID="N158ae5b668174f6a8adabc1babe7d408"/>
+  <rdf:Description rdf:nodeID="Ndfc9d07cf1e944dc971a3e6ed9008310">
+    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#GeographicLocation"/>
+    <rdf:rest rdf:nodeID="Nbe6922a86014457593c950269aec3de9"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Na7818a25ca60443999fa3a3a672a1077">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-    <owl:members rdf:nodeID="Ne4803bf08d514058a407dddb25da3e95"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N14028afb888a4487ba889fc6994ba165">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#AnticipationSentimentType"/>
-    <rdf:rest rdf:nodeID="Nf4e3bddf93e845c1b12152c11728cb37"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9f9fa0d6993447f19406aed933bf9950">
-    <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasSentimentIntensityIndexRegression"/>
-    <rdf:rest rdf:nodeID="N89b19b91cb0a425bb5d7e057a414470c"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N89b19b91cb0a425bb5d7e057a414470c">
+  <rdf:Description rdf:nodeID="N63d49c35c1b64b1d989819eaf50faeae">
     <rdf:first rdf:resource="http://www.semanticweb.org/wimve/ontologies/2024/3/ontology_empath#hasWikipediaPageTitle"/>
-    <rdf:rest rdf:nodeID="Nf23a54bf9d734c329be92f83e1a3df43"/>
+    <rdf:rest rdf:nodeID="N9fc4d6a6608d43f98700612a9b5694bc"/>
   </rdf:Description>
 </rdf:RDF>
