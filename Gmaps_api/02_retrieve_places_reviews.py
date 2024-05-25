@@ -1,9 +1,21 @@
-# V2
-# Échantillon de place_id
+"""
+Extraire les avis sur des lieux de Google Maps
+
+Extrait les avis relatifs aux lieux contenus dans le
+dict places. Utilise l'API Serp pour interroger et récupérer
+les reviews de Google Maps, notamment l'id de l'utilisateur, 
+la note laissée et le texte de l'avis.
+
+Les résultats sont écrits dans deux fichiers :
+reviews_test.json pour les avis
+reviewers_test.json pour les utilisateurs uniques
+
+**NB** serpapi nécessite python 3.7 !!
+"""
 
 # Nécessite python 3.7(.16)
-from serpapi import GoogleSearch
 import json
+from serpapi import GoogleSearch
 
 # Échantillon de lieux
 places = {
@@ -29,7 +41,7 @@ reviews_by_place = {}
 reviewers = {}
 
 # Nombre de page à scraper
-number_of_review_pages = 2
+NUMBER_OF_REVIEW_PAGES = 2
 
 # Itérer sur les lieux
 for place, place_id in places.items():
@@ -37,9 +49,9 @@ for place, place_id in places.items():
     gmaps_review_params["place_id"] = place_id
     # Préparer l'array de reviews
     monument_reviews = []
-    next_page_token = None
+    next_page_token = None # pylint: disable=C0103
     # Itérer sur les pages de reviews
-    for page in range(number_of_review_pages):
+    for page in range(NUMBER_OF_REVIEW_PAGES):
         # Après la première itération, ajouter le token de la page suivante à ouvrir
         if page > 0 and next_page_token:
             gmaps_review_params["next_page_token"] = next_page_token
@@ -64,7 +76,7 @@ for place, place_id in places.items():
             monument_reviews.append(review_info)
             # Extraire l'id du user
             contributor_id = review["user"]["contributor_id"]
-            # Si nécessaire, ajouter ses infos aux reviewers    
+            # Si nécessaire, ajouter ses infos aux reviewers
             if contributor_id not in reviewers:
                 reviewers[contributor_id] = {
                     "contributor_id": contributor_id,
@@ -74,7 +86,7 @@ for place, place_id in places.items():
         if page > 0 and next_page_token:
             # Enlever le token des paramètres
             gmaps_review_params.pop("next_page_token")
-        # Récupérer le token de la prochaine page    
+        # Récupérer le token de la prochaine page
         next_page_token = rslts_reviews["serpapi_pagination"]["next_page_token"]
         # Arrêter le loop s'il n'y en a plus
         if not next_page_token:
@@ -87,5 +99,5 @@ with open("reviews_test.json", "w", encoding="utf-8") as outfile:
     json.dump(reviews_by_place, outfile, ensure_ascii=False)
 
 # Sauvegarder les reviewers dans un JSON
-with open("reviewers_test.json", "w") as outfile: 
+with open("reviewers_test.json", "w", encoding="utf-8") as outfile:
     json.dump(reviewers, outfile)

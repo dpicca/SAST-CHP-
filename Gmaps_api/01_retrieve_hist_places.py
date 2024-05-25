@@ -1,6 +1,23 @@
+"""
+Extraire les informations sur des lieux de Google Maps
+
+Extrait les informations relatives aux lieux contenus dans le
+dict places. Utilise l'API Serp pour interroger et récupérer
+le nom, l'id Google Maps, la description textuelle, le(s) type(s),
+la latitude, la longitude, la note, le nombre d'avis, et l'adresse
+
+Le code iso du pays où est situé le lieu est également récupérer à
+l'aide de l'API GeoNames.
+
+Les résultats sont écrits dans un fichier places_test.json
+
+**NB** serpapi nécessite python 3.7 !!
+"""
+
 # Nécessite python 3.7(.16)
-from serpapi import GoogleSearch
+import json
 import requests
+from serpapi import GoogleSearch
 
 # Définir quelques lieux
 places = {
@@ -27,17 +44,34 @@ gmaps_place_params = {
 # Initialiser les lieux
 places_info = {}
 
-# Fonction pour récupérer le code iso du pays sur GeoNames 
+# Fonction pour récupérer le code iso du pays sur GeoNames
 def get_country_iso(lat, lng):
+    """
+    Récupère le code ISO d'un pays à l'aide de coordonnées
+    latitude et longitude (WGS84)
+
+    Parameters:
+    lat (float): La latitude du point
+    lng (float): La longitude du point
+
+    Returns:
+    string: Le code ISO 3166-1 alpha-2 du pays où est situé le point
+    """
+
+    # URL de l'API de GeoNames pour les codes de pays
     base_url = "http://api.geonames.org/countryCode"
+    # Paramètres (remplir le username)
     params = {
         "lat": lat,
         "lng": lng,
         "type": "JSON",
         "username": "" # nom_utilisateur
     }
-    response = requests.get(base_url, params=params)
+    # Réponse retournée
+    response = requests.get(base_url, params=params, timeout=5000)
+    # Extraire le json
     data = response.json()
+    # Retourner le code du pays
     return data.get("countryCode")
 
 # Itérer sur les lieux
@@ -66,10 +100,9 @@ for nom, name in places.items():
 
     # Récupérer le code du pays
     place_info['country_iso'] = get_country_iso(place_info['latitude'], place_info['longitude'])
-    
     # Ajouter au résultat final
     places_info[nom] = place_info
 
 # Exporter les résultats
-with open("places_test.json", "w") as outfile: 
+with open("places_test.json", "w", encoding="utf-8") as outfile:
     json.dump(places_info, outfile)
