@@ -1,6 +1,18 @@
 ## Partie Gmaps_api
 
-Travail avec SERP API pour extraire les informations de Google Maps
+Travail avec SERP API pour extraire les informations de Google Maps. Les informations concernent tant les lieux et les avis, que les gens qui les ont postés.
+
+### Utilisation des scripts
+
+Le script _00_scrape_cultural_unesco_site.py_ est une tentative d'utiliser la liste des sites inscrits au patrimoine mondial de l'UNESCO pour obtenir une base de lieux. Comme mentionné dans l'[issue 2](https://github.com/unil-ish/EMPATH/issues/2), la tentative n'a pas abouti, le script ne doit donc pas être nécessairement exécuté.
+
+Le script _01_retrieve_hist_places.py_ est à exécuter à l'aide de python 3.7, en ajoutant la clé api SERP (100 requêtes / mois, [https://serpapi.com/dashboard](https://serpapi.com/dashboard)) à l'endroit indiqué, ainsi que le username GeoNames (10'000 crédits / jour, [http://www.geonames.org/](http://www.geonames.org/)). Il permet d'obtenir des informations sur les lieux du dict `places` qui peut être modifié pour d'autres lieux. Les résultats se trouvent dans `/outputs/places.json`.
+
+Le script _02_retrieve_places_reviews.py_ est à exécuter à l'aide de python 3.7, en ajoutant la clé api SERP (100 requêtes / mois, [https://serpapi.com/dashboard](https://serpapi.com/dashboard)) à l'endroit indiqué. Actuellement, il est basé sur un dict `places` d'exemple, mais peut également prendre le contenu de `/outputs/places.json` en entrée. Le script permet d'extraire les avis (_reviews_) Google Maps des lieux ainsi que des informations (basiques) sur les utilisateurs (_user_) les ayant ajoutés. Les résultats se trouvent dans `/outputs/reviews.json` pour les avis et `/outputs/reviewers.json` pour les utilisateurs.
+
+## Détails
+
+Les éléments ci-dessous reprennent plus en détails la structure du dossier Gmaps_api
 
 ### Installation
 
