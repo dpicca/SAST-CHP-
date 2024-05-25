@@ -6,9 +6,9 @@ dict places. Utilise l'API Serp pour interroger et récupérer
 les reviews de Google Maps, notamment l'id de l'utilisateur, 
 la note laissée et le texte de l'avis.
 
-Les résultats sont écrits dans deux fichiers :
-reviews_test.json pour les avis
-reviewers_test.json pour les utilisateurs uniques
+Les résultats sont écrits dans deux fichiers du dossier outputs
+reviews.json pour les avis
+reviewers.json pour les utilisateurs uniques
 
 **NB** serpapi nécessite python 3.7 !!
 """
@@ -95,9 +95,9 @@ for place, place_id in places.items():
     reviews_by_place[place] = monument_reviews
 
 # Sauvegarder les reviews dans un JSON
-with open("reviews_test.json", "w", encoding="utf-8") as outfile:
+with open("outputs/reviews.json", "w", encoding="utf-8") as outfile:
     json.dump(reviews_by_place, outfile, ensure_ascii=False)
 
 # Sauvegarder les reviewers dans un JSON
-with open("reviewers_test.json", "w", encoding="utf-8") as outfile:
+with open("outputs/reviewers.json", "w", encoding="utf-8") as outfile:
     json.dump(reviewers, outfile)

@@ -7,7 +7,7 @@ des sites de l'UNESCO. Récupère le nom, la description, les coordonnées
 (lat et long), la region, le pays, et le caractère transnational liés
 aux lieux culturels.
 
-Le résultat est exporté dans un fichier cultural_places_v1.json
+Le résultat est exporté dans outputs/test_cultural_places_v1.json
 
 N'a pas été utilisé car la majorité des lieux n'a pas de 
 correspondance ponctuelle dans Google Maps.
@@ -56,5 +56,5 @@ for row in root.findall('row'):
 
 
 # Écrire un json avec les lieux
-with open('cultural_places_v1.json', 'w', encoding="utf-8") as f:
+with open('outputs/test_cultural_places_v1.json', 'w', encoding="utf-8") as f:
     json.dump(cultural_places, f)

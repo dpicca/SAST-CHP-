@@ -9,7 +9,7 @@ la latitude, la longitude, la note, le nombre d'avis, et l'adresse
 Le code iso du pays où est situé le lieu est également récupérer à
 l'aide de l'API GeoNames.
 
-Les résultats sont écrits dans un fichier places_test.json
+Les résultats sont écrits dans outputs/places.json
 
 **NB** serpapi nécessite python 3.7 !!
 """
@@ -104,5 +104,5 @@ for nom, name in places.items():
     places_info[nom] = place_info
 
 # Exporter les résultats
-with open("places_test.json", "w", encoding="utf-8") as outfile:
+with open("outputs/places.json", "w", encoding="utf-8") as outfile:
     json.dump(places_info, outfile)
