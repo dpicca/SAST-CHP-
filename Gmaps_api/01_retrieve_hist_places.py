@@ -6,8 +6,11 @@ dict places. Utilise l'API Serp pour interroger et récupérer
 le nom, l'id Google Maps, la description textuelle, le(s) type(s),
 la latitude, la longitude, la note, le nombre d'avis, et l'adresse
 
-Le code iso du pays où est situé le lieu est également récupérer à
+Le code iso du pays où est situé le lieu est également récupéré à
 l'aide de l'API GeoNames.
+
+Le titre et l'url de la page wikipédia en anglais du lieu est ajoutée
+grâce à l'API Wikimedia.
 
 Les résultats sont écrits dans outputs/places.json
 
