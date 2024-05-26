@@ -44,6 +44,8 @@ gmaps_place_params = {
 # Initialiser les lieux
 places_info = {}
 
+
+
 # Fonction pour récupérer le code iso du pays sur GeoNames
 def get_country_iso(lat, lng):
     """
@@ -74,6 +76,44 @@ def get_country_iso(lat, lng):
     # Retourner le code du pays
     return data.get("countryCode")
 
+def search_wikipedia(nom_lieu):
+    """
+    Récupère le titre et l'URL de la première page wikipédia
+    (en anglais) correspondant au nom du lieu'
+
+    Parameters:
+    nom_lieu (string): Nom du lieu
+
+    Returns:
+    dict: Un dict contenant le titre (title) et l'url de la page Wikipédia
+
+    Code adapté de https://api.wikimedia.org/wiki/Searching_for_Wikipedia_articles_using_Python
+    """
+    # Remplacer ici le jeton API Wikimédia
+    headers = {
+    'Authorization': 'Bearer API_ACCESS_TOKEN'
+    }
+    # Définir l'url en fonction de la langue (ici 'en')
+    base_url = 'https://api.wikimedia.org/core/v1/wikipedia/'
+    endpoint = '/search/page'
+    url = base_url + 'en' + endpoint
+
+    # Limiter les résultats à la première page correspondante
+    parameters = {'q': nom_lieu, 'limit': 1}
+
+    # Réponse retournée et extraire le json
+    response = requests.get(url, headers=headers, params=parameters, timeout=5000)
+    response_data = json.loads(response.text)
+    # Premier (et seul) résultat
+    page = response_data['pages'][0]
+    # Ajouter au dict de résultat
+    result_wiki = {
+        'title': page['title'],
+        'url': f"https://en.wikipedia.org/wiki/{page['key']}"
+    }
+    # Retourner le résultat
+    return result_wiki
+
 # Itérer sur les lieux
 for nom, name in places.items():
     # Ajouter l'id du lieu aux paramètres
@@ -100,6 +140,12 @@ for nom, name in places.items():
 
     # Récupérer le code du pays
     place_info['country_iso'] = get_country_iso(place_info['latitude'], place_info['longitude'])
+
+    # Récupérer la page wikipédia
+    rslts_wikipedia = search_wikipedia(name)
+    place_info['wiki_title'] = rslts_wikipedia['title']
+    place_info['wiki_url']= rslts_wikipedia['url']
+
     # Ajouter au résultat final
     places_info[nom] = place_info
 
