@@ -36,7 +36,7 @@ for key,items in place_data.items():
     # Recode the name of the cultural element
     element_name = re.sub(r'\s+|\'|-','_',items['name'])
 
-    # Define CulturalElement URI, Class and Label
+    # Define CulturalElement URI, Class and Label of CulturalElement
     cultural_element = URIRef(NAMESPACE+'CulturalElement_'+items['place_id'])
     g.add((cultural_element, RDF.type, NS.CulturalElement))
     g.add((cultural_element, RDFS.label, Literal(element_name)))
@@ -54,11 +54,10 @@ for key,items in place_data.items():
         g.add((cultural_element, NS.hasCulturalElementType,
                Literal(elem_type, datatype=XSD.string)))
 
-    # Define Location URI, Class and Label
+    # Define Location URI, Class and Label of Location
     location = URIRef(NAMESPACE+'LocationOf_'+items['place_id'])
     g.add((location, RDF.type, NS.GeographicLocation))
-    g.add((location, RDFS.label,
-           Literal(re.sub(r'\s+|\'|-','_',items['name']+'_Location'))))
+    g.add((location, RDFS.label, Literal(element_name+'_Location')))
 
     # Triples from DataProperties with Location as Domain
     g.add((location, NS.hasLocationLatitude,
@@ -74,7 +73,22 @@ for key,items in place_data.items():
     g.add((cultural_element, NS.hasLocation, location))
     g.add((location, NS.isLocationOf, cultural_element))
 
-    #Check if the CulturalElement has a sentiment analysis
+    # Define Location URI, Class and Label of WikipediaPage
+    wiki_page = URIRef(NAMESPACE+'Wikipedia_Of_'+items['place_id'])
+    g.add((wiki_page, RDF.type, NS.WikipediaPage))
+    g.add((wiki_page, RDFS.label, Literal(element_name+'_Wiki')))
+
+    # Triples from DataProperties with WikipediaPage as Domain
+    g.add((wiki_page, NS.hasWikipediaPageUrl,
+           Literal(items['wiki_url'], datatype=XSD.anyURI)))
+    g.add((wiki_page, NS.hasWikipediaPageTitle,
+           Literal(items['wiki_title'], datatype=XSD.string)))
+
+    # Triples from ObjectProperties between CulturalElement and WikipwdiaPage
+    g.add((cultural_element, NS.hasWikipediaPage, wiki_page))
+    g.add((wiki_page, NS.isWikipediaPageOf, cultural_element))
+
+    # Check if the CulturalElement has a sentiment analysis
     if key in sentiment_data:
         for sentiment_review, items in sentiment_data[key].items():
 
