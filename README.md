@@ -6,7 +6,7 @@ Développer un système complet qui exploite l'analyse sémantique et le suivi d
 
 ### Structure, contenus et fonctionnement
 
-Les différents modules, leur contenu et les informations nécessaires à l'utilisation sont détaillés dans les rubriques ci-dessous...RB complète
+Les différents modules, leur contenu et les informations nécessaires à l'utilisation sont détaillés dans les rubriques ci-dessous. Elles permettent d'obtenir une vue d'ensemble des différentes parties et la façon dont elles ont été effectivement réalisées. Les consignes initiales, situées en fin de document, peuvent servir de comparaison avec les attentes.
 
 #### Ontology
 
@@ -14,7 +14,32 @@ Les différents modules, leur contenu et les informations nécessaires à l'util
 
 #### Gmaps_api
 
+Ce module est dédié à la collecte d'informations et d'avis issus de Google Maps sur les sites patrimoniaux. Il utilise principalement l'[API SERP](https://serpapi.com/google-maps-api) et est composé de trois scripts (de 00 à 02) et de quatres résultats situés dans `/outputs`.
 
+##### Préparation
+
+**NB** Pour exécuter les scripts 01 et 02, il est nécessaire d'utiliser python 3.7. Il est possible de créer un environnement conda de la manière suivante :
+
+```bash
+conda create -n empath_p37 python=3.7.16
+
+conda activate empath_p37
+
+pip install google-search-results
+```
+
+Il est également nécessaire de disposer (et insérer dans les scripts) de jetons/clés API personnels pour les API suivantes :
+- [SERP](https://serpapi.com/) (scripts 01 et 02)
+- [GeoNames](https://www.geonames.org/) (script 01)
+- [Wikimedia](https://api.wikimedia.org/wiki/Main_Page) (script 01)
+
+##### Fonctionnement
+
+Le script _01_retrieve_hist_places.py_ permet d'obtenir des informations sur les lieux contenus dans le dict `places` qui peut être modifié pour d'autres lieux. Il récupère les informations de Google Maps, y ajoute le pays sur la base de la localisation et le titre et l'url de la page Wikipédia correspondante.Les résultats sont exportés dans `/outputs/places.json`.
+
+Le script _02_retrieve_places_reviews.py_ est basé sur un échantillon du dict `places` d'exemple, mais peut également prendre le contenu de `/outputs/places.json` en entrée (code commenté). Le script permet d'extraire les avis (_reviews_) Google Maps des lieux (texte, horodatage, note, nombre de likes), ainsi que des informations (basiques) sur les utilisateurs (_user_) les ayant ajoutés (id, nombre de reviews et de photos). Les résultats se trouvent dans `/outputs/reviews.json` pour les avis et `/outputs/reviewers.json` pour les utilisateurs.
+
+Le script _00_scrape_cultural_unesco_site.py_ est facultatif. C'est une tentative d'utiliser la liste des sites inscrits au patrimoine mondial de l'UNESCO pour obtenir une base de sites patrimoniaux à partir de laquelle récupérer les informations et avis. Pour les raisons mentionnées dans l'[issue 2](https://github.com/unil-ish/EMPATH/issues/2), la tentative n'a pas abouti, le script ne doit donc pas être nécessairement exécuté.
 
 #### SentimentAnalysis
 
