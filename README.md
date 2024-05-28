@@ -86,7 +86,29 @@ Le script _02_retrieve_places_reviews.py_ est basé sur un échantillon du dict 
 Le script _00_scrape_cultural_unesco_site.py_ est facultatif. C'est une tentative d'utiliser la liste des sites inscrits au patrimoine mondial de l'UNESCO pour obtenir une base de sites patrimoniaux à partir de laquelle récupérer les informations et avis. Pour les raisons mentionnées dans l'[issue 2](https://github.com/unil-ish/EMPATH/issues/2), la tentative n'a pas abouti, le script ne doit donc pas être nécessairement exécuté.
 
 #### SentimentAnalysis
+Ce module vise à extraire d'un avis (*review*) le contenu émotionnel transmis par son texte.
+Le module prend en entrée un fichier json associant à divers sites cuturels une liste de reviews faites par les gens ayant visité le site. Il donne en sortie un autre dictionnaire associant à ces reviews les éléments suivants: 
+- **E-c** : un étiquetage des reviews avec 11 sentiments possibles (anger, fear, joy, sadness, anticipation, disgust
+surprise, trust, optimism, pessimism, love) (en français : colère, peur, joie, tristesse, anticipation, dégoût, surprise, confiance, optimisme, pessimisme, amour).
+- **V-reg** : une évaluation de la valence d’une review sur une échelle de 0 à 1.
+- **V-oc** : une évaluation de la valence d’une review par classification ordinale.
 
+Puis, si la review contient un ou plusieurs des 4 sentiments suivants ; joie, peur, colère, tristesse, alors on associe à ces sentiments les valeurs suivantes:
+- **EI-reg** : un évaluation de l’intensité d’une émotion sur une échelle de 0 à 1.
+- **EI-oc** : un évaluation de l’intensité d’une émotion par classification ordinale.
+
+##### Préparation et Utilisation
+Pour des raisons de ressources limitées, il a été nécessaire de passer par les GPU mise à dispositions par Google via Google Colab. Le code en pthon permettant d'effectuer l'analse de sentiments prends donc la forme d'un Jupiter Notebook. Pour l'utiliser:
+- Ouvrez le fichier [review_sentiment_analysis.ipynb](https://github.com/unil-ish/EMPATH/blob/main/SentimentAnalysis/review_sentiment_analysis.ipynb) dans Google Colab
+- Uploadez le document [reviews.json](https://github.com/unil-ish/EMPATH/blob/main/Gmaps_api/outputs/reviews.json) dans votre session de travail.
+- Sous Runtime > Change Runtime Type Choisissez GPU.
+- Exécutez l'ensemble du notebook
+
+**NB** Le code va par défaut aller chercher le modèle quantizé d'EmoLLM à chaque session. Il est possible de stocker ce modèle sur un Google Drive et d' accéder de manière bien plus efficace. Cependant, la limite de taille de la version gratuite de Google Drive peut rendre cette option non-viable si d'autres fichiers volumineux sont stockés dans le Drive.
+
+##### Limites du modèle
+Dans certains cas, EmoLLM peut générer des réponses aberrantes. Cela est d'autant plus vrai dans le cadre de ce projet puisque ce dernier repose sur une version quantizée du modèle. Dans les cas où une réponse générée par le modèle ne correspond à aucune des réponses permises, cela est indiqué par le message "Aberrant answer from EmoLLM : " suivi de la réponse donnée.
+La mesure dans laquelle les réponses données par EmoLLM sont cohérentes entre elles est incertaine. Par exemple, il semble possible pour le modèle d'attribuer un haut V-reg (valence estimée par une échelle de 0 à 1) et un bas V-oc (valence estimée par l'attribution à l'une de six catégorie ordinales).
 
 
 #### Python RDF
