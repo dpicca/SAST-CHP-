@@ -3,7 +3,7 @@ Populates the EMPATH OWL ontology with de data recovered from the serpAPI and
 the Sentiment Analysis.
 """
 
-#Packages importaion
+#Packages importation
 import json
 import re
 from rdflib import Graph, Literal, RDF, URIRef, Namespace
