@@ -139,3 +139,11 @@ La sauvegarde de l'ontologie se fait grâce à la fonction _serialize()_ de RDFl
 ```python
 g.serialize(NEW_ONTOLOGY_PATH, format='xml', encoding='utf-8')
 ```
+
+### Auteurs
+- Jeremias Kuehne
+- Laure Margot
+- Olivia Verbrugge
+- Paul Zignani
+- Raphaël Bubloz
+
