@@ -6,7 +6,7 @@ Développer un système complet qui exploite l'analyse sémantique et le suivi d
 
 ### Structure, contenus et fonctionnement
 
-Les différents modules, leur contenu et les informations nécessaires à l'utilisation sont détaillés dans les rubriques ci-dessous. Elles permettent d'obtenir une vue d'ensemble des différentes parties et la façon dont elles ont été effectivement réalisées. Les consignes initiales, situées en fin de document, peuvent servir de comparaison avec les attentes.
+Les différents modules, leur contenu et les informations nécessaires à l'utilisation sont détaillés dans les rubriques ci-dessous. Elles permettent d'obtenir une vue d'ensemble des différentes parties et la façon dont elles ont été effectivement réalisées.
 
 #### Ontologie
 
