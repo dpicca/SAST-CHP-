@@ -53,7 +53,7 @@ Cette ontologie est conçue pour modéliser des lieux culturels et diverses info
 
 ##### Installation
 
-Téléchargez et installez Protégé depuis ce [lien](https://protege.stanford.edu/)
+Pour visualiser et manipuler l'ontologie de manière simple, vous pouvez télécharger et installer Protégé depuis ce [lien](https://protege.stanford.edu/)
 
 
 #### Gmaps_api
