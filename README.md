@@ -8,7 +8,7 @@ Développer un système complet qui exploite l'analyse sémantique et le suivi d
 
 Les différents modules, leur contenu et les informations nécessaires à l'utilisation sont détaillés dans les rubriques ci-dessous. Elles permettent d'obtenir une vue d'ensemble des différentes parties et la façon dont elles ont été effectivement réalisées. Les consignes initiales, situées en fin de document, peuvent servir de comparaison avec les attentes.
 
-#### Ontology
+#### Ontologie
 
 ##### Introduction
 
@@ -33,9 +33,23 @@ Cette ontologie est conçue pour modéliser les lieux culturels, leurs avis par 
  - isWikipediaPageOf
 
  ###### Data Poperties
-- ??
-- ??
-- ??
+- hasCulturalElementGmapsID
+- hasLocationAddress
+- hasCountryISO
+- hasCulturalElementName
+- hasCulturalRating
+- hasCulturalElementRating
+- hasCulturalElementType
+- hasLocationLatitude
+- hasLocationLongitude
+- hasNumberOfReviews
+- hasReviewIntensityIndexOrdinalClassification
+- hasReviewIntensityIndexRegression
+- hasReviewRating
+- hasSentimentIntensityIndexOrdinalClassification
+- hasSentimentIntensityIndexRegression
+- hasWikipediaPageTitle
+- hasWikipediaPageUrl
 
 ##### Installation
 
