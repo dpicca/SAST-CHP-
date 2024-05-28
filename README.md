@@ -47,8 +47,32 @@ Le script _00_scrape_cultural_unesco_site.py_ est facultatif. C'est une tentativ
 
 #### Python RDF
 
+Ce module est destiné l'implémention des données Google Maps et de l'analyse de sentiment dans l'ontologie. Celle-ci est réalisé grâce à la librairie RDFlib.
 
+##### Fonctionnement
+Le script _populate_ontology.py_ peut être divisé en quatre parties :
+###### 1. Importation des données Google Maps et de l’analyse de sentiment au format JSON
+```python
+with open('data.json', encoding='utf-8') as f:
+    data = json.load(f)
+```
+###### 2. Instanciation de l'ontologie
+L'ontologie est créée avec la fonction _Graph()_ et chargée avec la fonction _parse()_
+```python
+g = Graph()
+g.parse(ONTOLOGY_PATH, format='xml')
+```
+###### 3. Création de triplets à partir des données
+Les triplets sont créés ainsi:
+```python
+g.add((sujet, prédicat, objet))
+```
+###### 4. Sauvegarde de la nouvelle ontologie
+La sauvegarde de l'ontologie se fait grâce à la fonction _serialize()_ de RDFlib
 
+```python
+g.serialize(NEW_ONTOLOGY_PATH, format='xml', encoding='utf-8')
+```
 #### Ressources and requirements
 
 
