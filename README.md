@@ -1,10 +1,38 @@
 # EMPATH: "Emotional Mapping and Preservation through Analytical Technology for Heritage".
 
-Pour le project, voici un aperçu plus détaillé qui décompose l'approche, les méthodologies et les technologies qui pourraient être impliquées :
-
 ### Objectif
 
 Développer un système complet qui exploite l'analyse sémantique et le suivi des sentiments pour évaluer l'intérêt du public et les réponses émotionnelles à l'égard des efforts de préservation du patrimoine culturel. Cet outil vise à aider les organisations du patrimoine culturel à comprendre le sentiment du public, à identifier les tendances et à prendre des décisions éclairées sur les priorités de préservation et les stratégies de sensibilisation.
+
+### Structure, contenus et fonctionnement
+
+Les différents modules, leur contenu et les informations nécessaires à l'utilisation sont détaillés dans les rubriques ci-dessous...RB complète
+
+#### Ontology
+
+
+
+#### Gmaps_api
+
+
+
+#### SentimentAnalysis
+
+
+
+#### Python RDF
+
+
+
+#### Ressources and requirements
+
+
+
+___
+
+### Consignes initiales
+
+Pour le project, voici un aperçu plus détaillé qui décompose l'approche, les méthodologies et les technologies qui pourraient être impliquées :
 
 ### Composants du système
 
