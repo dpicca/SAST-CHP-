@@ -10,6 +10,36 @@ Les différents modules, leur contenu et les informations nécessaires à l'util
 
 #### Ontology
 
+##### Introduction
+
+Cette ontologie est conçue pour modéliser les lieux culturels, leurs avis par des utilisateurs, ainsi que les diverses relations entre ces entités. Elle vise à faciliter l'organisation, l'intégration et la recherche d'informations sur les lieux culturels à travers des descriptions.
+
+##### Structure de l'ontologie
+###### Classes
+- CulturalElement
+- GeographicLocation
+- Review
+- Sentiment
+- WikipediaPage
+
+ ###### Object Properties
+ - hasLocation
+ - hasReview
+ - hasSentiment
+ - hasWikipediaPage
+ - isLocationOf
+ - isReviewOf
+ - isSentimentOf
+ - isWikipediaPageOf
+
+ ###### Data Poperties
+- ??
+- ??
+- ??
+
+##### Installation
+
+Téléchargez et installez Protégé depuis ce [lien](https://protege.stanford.edu/)
 
 
 #### Gmaps_api
