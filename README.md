@@ -12,7 +12,7 @@ Les différents modules, leur contenu et les informations nécessaires à l'util
 
 ##### Introduction
 
-Cette ontologie est conçue pour modéliser les lieux culturels et diverses informations à leur sujet, l'avis qu'en ont les utilisateurs, ainsi que les différentes relations entre ces entités. Elle vise à faciliter l'organisation, l'intégration et la recherche d'informations sur les lieux culturels à travers des descriptions.
+Cette ontologie est conçue pour modéliser des lieux culturels et diverses informations à leur sujet, l'avis qu'en ont les utilisateurs, ainsi que les différentes relations entre ces entités. Elle vise à faciliter l'organisation, l'intégration et la recherche d'informations sur les lieux culturels à travers des descriptions.
 
 ##### Structure de l'ontologie
 ###### Classes
